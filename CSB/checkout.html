@@ -76,50 +76,7 @@
         </div>
         <!-- /.top-search-holder -->
 
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 animate-dropdown top-cart-row">
-          <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
-
-          <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
-              <div class="items-cart-inner">
-                <div class="basket">
-                  <div class="basket-item-count"><span class="count">0</span></div>
-                  <div class="total-price-basket"> <span class="lbl">Panier</span> <span
-                      class="value">0.00€</span> </div>
-                </div>
-              </div>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <div class="cart-item product-summary">
-                  <div class="row">
-                    <div class="col-xs-4">
-                      <div class="image"> <a href="#"><img src="#" alt=""></a>
-                      </div>
-                    </div>
-                    <div class="col-xs-7">
- 
-                    </div>
-                    <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
-                  </div>
-                </div>
-                <!-- /.cart-item -->
-                <div class="clearfix"></div>
-                <hr>
-                <div class="clearfix cart-total">
-        
-                  </div>
-                  <div class="clearfix"></div>
-                  <a href="shopping-cart.html" class="btn btn-upper btn-primary btn-block m-t-20">Verifier le panier</a>
-                </div>
-                <!-- /.cart-total-->
-
-              </li>
-            </ul>
-            <!-- /.dropdown-menu-->
-          </div>
-          <!-- /.dropdown-cart -->
-
-          <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
+        <
         </div>
         <!-- /.top-cart-row -->
       </div>
@@ -168,7 +125,7 @@
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
 				<li><a href="index.html">Accueil</a></li>
-				<li class='active'>Login</li>
+				<li class='active'>Commande</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -176,68 +133,104 @@
 
 <div class="body-content">
 	<div class="container">
-		<div class="sign-in-page">
+		<div class="checkout-box ">
 			<div class="row">
-				<!-- Sign-in -->			
-<div class="col-md-6 col-sm-6 sign-in">
-	<h4 class="">Sign in</h4>
-	<p class="">Hello, Welcome to your account.</p>
-	<div class="social-sign-in outer-top-xs">
-		<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Connexion avec Facebook</a>
-		<a href="#" class="twitter-sign-in"><i class="fa fa-twitter"></i> Connexion avec Twitter</a>
-	</div>
-	<form class="register-form outer-top-xs" role="form">
-		<div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Email <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
-		</div>
-	  	<div class="form-group">
-		    <label class="info-title" for="exampleInputPassword1">Mot de pass <span>*</span></label>
-		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputPassword1" >
-		</div>
-		<div class="radio outer-xs">
-		  	<label>
-		    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Ce souvenir de moi !
-		  	</label>
-		  	<a href="#" class="forgot-password pull-right">Mot de pass Oublié?</a>
-		</div>
-	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button">Connexion</button>
-	</form>					
-</div>
-<!-- Sign-in -->
+				<div class="col-xs-12 col-sm-9 col-md-9 rht-col">
+					<div class="panel-group checkout-steps" id="accordion">
+						<!-- checkout-step-01  -->
+<div class="panel panel-default checkout-step-01">
 
-<!-- create a new account -->
-<div class="col-md-6 col-sm-6 create-new-account">
-	<h4 class="checkout-subtitle">Créer un nouveau compte</h4>
-	<p class="text title-tag-line">Creer</p>
-	<form class="register-form outer-top-xs" role="form">
-		<div class="form-group">
-	    	<label class="info-title" for="exampleInputEmail2">Email <span>*</span></label>
-	    	<input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail2" >
-	  	</div>
-        <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Nom <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
+	<!-- panel-heading -->
+		<div class="panel-heading">
+    	<h4 class="unicase-checkout-title">
+	        <a data-toggle="collapse" class="" data-parent="#accordion" href="#collapseOne">
+	          <span>1</span>Méthode de paiement
+	        </a>
+	     </h4>
+    </div>
+    <!-- panel-heading -->
+
+	<div id="collapseOne" class="panel-collapse collapse in">
+
+		<!-- panel-body  -->
+	    <div class="panel-body">
+			<div class="row">		
+
+				<!-- guest-login -->			
+				<div class="col-md-6 col-sm-6 guest-login">
+					<h4 class="checkout-subtitle"> S'inscrire en tant qu'invité</h4>
+					<p class="text title-tag-line">Inscrivez-vous pour plus de facilité</p>
+
+					<!-- radio-form  -->
+					<form class="register-form" role="form">
+					    <div class="radio radio-checkout-unicase">  
+					        <input id="guest" type="radio" name="text" value="guest" checked>  
+					        <label class="radio-button guest-check" for="guest">Commander en tant qu'invité</label>  
+					          <br>
+					        <input id="register" type="radio" name="text" value="register">  
+					        <label class="radio-button" for="register">S'inscrire</label>  
+					    </div>  
+					</form>
+					<!-- radio-form  -->
+
+					<h4 class="checkout-subtitle outer-top-vs">Inscrivez-vous pour plus de rapidité</h4>
+					<p class="text title-tag-line ">Inscrivez-vous pour plus de facilité</p>
+					
+					<ul class="text instruction inner-bottom-30">
+						<li class="save-time-reg">- Vérification rapide et facile</li>
+						<li>- Accé rapide à votre historique d'achat</li>
+					</ul>
+
+					<button type="submit" class="btn-upper btn btn-primary checkout-page-button checkout-continue ">Continuer</button>
+          <a href="shopping-cart.html"> Continuer</a>
+				</div>
+				<!-- guest-login -->
+
+				<!-- already-registered-login -->
+				<div class="col-md-6 col-sm-6 already-registered-login">
+					<h4 class="checkout-subtitle">  Déja inscrit?</h4>
+					<p class="text title-tag-line">Connectez-vous </p>
+					<form class="register-form" role="form">
+						<div class="form-group">
+					    <label class="info-title" for="exampleInputEmail1">Email<span>*</span></label>
+					    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" placeholder="">
+					  </div>
+					  <div class="form-group">
+					    <label class="info-title" for="exampleInputPassword1">Mot de pass<span>*</span></label>
+					    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputPassword1" placeholder="">
+					    <a href="#" class="forgot-password">Mot de pass oublié ?</a>
+					  </div>
+					  <button type="submit" class="btn-upper btn btn-primary checkout-page-button">S'identifier</button>
+            <a href="sign-in.html" style="text-decoration:none" >S'identifier</a>
+					</form>
+				</div>	
+				<!-- already-registered-login -->		
+
+			</div>			
 		</div>
-        <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Numéro de téléphone <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
+		<!-- panel-body  -->
+
+	</div><!-- row -->
+</div>
+
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3 sidebar">
+					<!-- checkout-progress-sidebar -->
+<div class="checkout-progress-sidebar ">
+	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+		    	<h4 class="unicase-checkout-title">A venir/h4>
+		    </div>
+		    <div class="">
+
+			</div>
 		</div>
-        <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Mot de pass <span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
-		</div>
-         <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Confirmer mot de pass<span>*</span></label>
-		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
-		</div>
-	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button">S'enregistrer</button>
-	</form>
-	
-	
-</div>	
-<!-- create a new account -->			</div><!-- /.row -->
-		</div><!-- /.sigin-in-->
+	</div>
+</div> 
+<!-- checkout-progress-sidebar -->				</div>
+			</div><!-- /.row -->
+		</div><!-- /.checkout-box -->
 		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
 <div id="brands-carousel" class="logo-slider wow fadeInUp">
 
@@ -309,8 +302,6 @@
 <!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
 </div><!-- /.body-content -->
 <!-- ============================================================= FOOTER ============================================================= -->
-
-
 <footer id="footer" class="footer color-bg">
   <div class="footer-bottom">
     <div class="container">
@@ -415,6 +406,7 @@
   </div>
 </footer>
 <!-- ============================================================= FOOTER : END============================================================= --> 
+
 <!-- For demo purposes – can be removed on production --> 
 
 <!-- For demo purposes – can be removed on production : End --> 
